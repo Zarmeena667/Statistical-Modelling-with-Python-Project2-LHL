@@ -57,7 +57,7 @@ It is evident from the supremely low R-squared value of 0.008 that this is not t
 2. I queried the YELP API a few times and reached the rate limit. I had to create three accounts to get over this problem.
 3. Dealing with merged dataframe was challenging due to repeat columns with suffixes.
 4. Dealing with NaN values is not as easy as it seems. I am always cautious while deleting NaN values and I think that might pose a problem when creating models in the future.
-5. The most amount of time in my data was spent retrieving data and parsing json to dataframes which limited my time for modeling. I'd want to time it better in the future.
+5. The most amount of time in my data was spent retrieving data and parsing json to dataframes. I'd want to time it better in the future.
 
 ## Future Goals
 - I'd like to explore apply function from numpy as a faster alternative to itterows and itertuples
