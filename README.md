@@ -12,7 +12,7 @@ The goal of this project was to:
 ## Process
 1. Accessing and Retrieving Data through APIs and Parsing to dataframe
 
-I accessed City Bike API to retrieve stations data for Portland, USA. There were a total of 238 bike stations in Portland at the time of data retrival. This data was then parsed to a dataframe and different manipulations were performed to further asses and understand the data. A subset of the dataframe containing only latitude and longitude data was used in subsequent tasks to access and retrieve required data from Foursquare and Yelp API
+I accessed City Bike API to retrieve stations data for Portland, USA. There were a total of 238 bike stations in Portland at the time of data retrival. This data was then parsed to a dataframe and different manipulations were performed to further asses and understand the data. A subset of the dataframe containing only latitude and longitude data was used in subsequent tasks to access and retrieve required data from Foursquare and Yelp API.
 
 For my project, I chose to retrieve data for all art galleries within 1000m radius of the bike stations. I was able to iterate over city bikes dataframe to retrieve required data for art galleries. I iterated over the 238 city bike stations using itterows for foursquare (which proved to be quite slow) and itertuples for Yelp.
 
@@ -21,15 +21,15 @@ For my project, I chose to retrieve data for all art galleries within 1000m radi
 
 2. Data cleaning, EDA and storage
 
-Once data was retrieved for art galleries location from Foursquare and Yelp the dataframes were further manipulated to a cleaner and more usable form. I also performed EDA to assess the data and finally stored the data to CSV files to be used in other specified tasks.
+Once data was retrieved for art galleries location from Foursquare and Yelp, the dataframes were further manipulated to a cleaner and more usable form. I also performed EDA to assess the data and finally stored the data to CSV files to be used in other specified tasks.
 
 3. Joining/Merging Dataframes and data manipulation
 
-For this task, I import the CSV files created earlier for citybikes, foursquare and yelp to dataframes. I then merged the three dataframes using inner and outer merge condition. The resulting dataframe from my first merge (final_df = pd.merge(fsqdf, yelpdf, on=['Name'], how='inner'))  had common columns appended with suffixes(-x, -y). I had to then format the merged data frames to have a single lat, longitude, distance and address. I accomplished this through taking the mean of lat_x, lat_y and longitude_x, longitude_y.
+For this task, I imported the CSV files created earlier for citybikes, foursquare and yelp to dataframes. I then merged the three dataframes using inner and outer merge condition. The resulting dataframe from my first merge (final_df = pd.merge(fsqdf, yelpdf, on=['Name'], how='inner'))  had common columns appended with suffixes(-x, -y). I had to then format the merged data frames to have a single columns for lat, longitude, distance and address. I accomplished this through taking the mean of lat_x, lat_y and longitude_x, longitude_y and address.
 
 4. EDA, data cleaning and data manipulation
 
-I further removed duplicates from  merged dataframe and checked the statistical composition of my data to assess how nulls are affecting my columns. I also used visualization techniques/EDA to explore patterns between different variables as we would be building a linear regression model for the next task. Observing my scatterplots, I decided to run a model for distance and rating. In order to avoid too many null values affecting my data, I further imputed mean values for Rating and Distance using mean.
+I further cleaned my data by removing irrelevant columns, checked for duplicates and also checked the statistical composition of my data to assess how nulls are affecting my columns. I also used visualization techniques/EDA to explore patterns between different variables as we would be building a linear regression model for the next task. Observing my scatterplots, I decided to run a model for distance and rating. In order to avoid too many null values affecting my data, I further imputed mean values for Rating and Distance using mean.
 
 5. Saving merged dataframe
 
@@ -37,11 +37,11 @@ I finally saved the clean merged dataframe as ff_df as a CSV.
 
 6. Sqlite database
 
-I used CSV files (citybikes, fsq, yelp and merged data) to create an sqlite database titled 'project_database'.
+I used CSV files (citybikes, fsq, yelp and finalfinal_df(merged data file)) to create an sqlite database titled 'project_database'.
 
 7. Linear Regression model
 
-I used simple linear regression to test the relationship between distance and rating variable (dependent variable). 
+I used simple linear regression to test the relationship between Distance and Rating variable (dependent variable). 
 
 
 ![image](https://github.com/Zarmeena667/Statistical-Modelling-with-Python-Project2-LHL/assets/145514413/7e01f24c-51b6-49b6-8905-c0c936d0da5e)
