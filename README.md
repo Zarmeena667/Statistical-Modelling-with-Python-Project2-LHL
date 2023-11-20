@@ -16,6 +16,9 @@ I accessed City Bike API to retrieve stations data for Portland, USA. There were
 
 For my project, I chose to retrieve data for all art galleries within 1000m radius of the bike stations. I was able to iterate over city bikes dataframe to retrieve required data for art galleries. I iterated over the 238 city bike stations using itterows for foursquare (which proved to be quite slow) and itertuples for Yelp.
 
+![image](https://github.com/Zarmeena667/Statistical-Modelling-with-Python-Project2-LHL/assets/145514413/bfa7d5dc-dacf-4074-9de8-489bd9bd6fb2)
+
+
 2. Data cleaning, EDA and storage
 
 Once data was retrieved for art galleries location from Foursquare and Yelp the dataframes were further manipulated to a cleaner and more usable form. I also performed EDA to assess the data and finally stored the data to CSV files to be used in other specified tasks.
@@ -42,6 +45,8 @@ I used simple linear regression to test the relationship between distance and ra
 
 
 ## Results
+
+It is evident from the supremely low R-squared value of 0.008 that this is not the best fit model. A p-value of less than 0.05 is considered to be statistically significant. The regression output for my model shows a p-value of 0, which means that the distance does not impact the rating.
 
 
 ## Challenges 
