@@ -44,7 +44,8 @@ I used CSV files (citybikes, fsq, yelp and finalfinal_df(merged data file)) to c
 I used simple linear regression to test the relationship between Distance and Rating variable (dependent variable). 
 
 
-![image](https://github.com/Zarmeena667/Statistical-Modelling-with-Python-Project2-LHL/assets/145514413/7e01f24c-51b6-49b6-8905-c0c936d0da5e)
+![image](https://github.com/Zarmeena667/Statistical-Modelling-with-Python-Project2-LHL/assets/145514413/c9cd3d4c-1069-4ba9-9b13-f8355134885f)
+
 
 
 ## Results
