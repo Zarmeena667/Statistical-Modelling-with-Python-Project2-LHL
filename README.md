@@ -44,6 +44,9 @@ I used CSV files (citybikes, fsq, yelp and merged data) to create an sqlite data
 I used simple linear regression to test the relationship between distance and rating variable (dependent variable). 
 
 
+![image](https://github.com/Zarmeena667/Statistical-Modelling-with-Python-Project2-LHL/assets/145514413/7e01f24c-51b6-49b6-8905-c0c936d0da5e)
+
+
 ## Results
 
 It is evident from the supremely low R-squared value of 0.008 that this is not the best fit model. A p-value of less than 0.05 is considered to be statistically significant. The regression output for my model shows a p-value of 0, which means that the distance does not impact the rating.
