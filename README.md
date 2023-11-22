@@ -10,18 +10,21 @@ The goal of this project was to:
 - identifying trends and patterns in data using statistical models
 
 ## Repository folder guide/order
-1. Readme
-2. notebooks
-     I. city_bikes
-     II. yelp_foursquare_EDA
-     III. joining_data
-     IV. model_building
-4. data
-     I. city_bikes_data
-     II. fsq_data
-     III. yelp_data
-     iv. finalfinal_df
-     v. project_database.db
+a. Readme
+
+b. notebooks
+   1. city_bikes
+   2. yelp_foursquare_EDA
+   3. joining_data
+   4.  model_building
+
+c. data
+
+   1. city_bikes_data
+   2. fsq_data
+   3. yelp_data
+   4. finalfinal_df
+   5. project_database.db
 
 ## Process
 1. Accessing and Retrieving Data through APIs and Parsing to dataframe
