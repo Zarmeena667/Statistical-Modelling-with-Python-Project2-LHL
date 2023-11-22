@@ -9,6 +9,20 @@ The goal of this project was to:
 - clean data within the merged dataframe
 - identifying trends and patterns in data using statistical models
 
+## Repository folder guide/order
+1. Readme
+2. notebooks
+     i. city_bikes
+     ii. yelp_foursquare_EDA
+     iii. joining_data
+     iv. model_building
+3. data
+     i. city_bikes_data
+     ii. fsq_data
+     iii. yelp_data
+     iv. finalfinal_df
+     v. project_database.db
+
 ## Process
 1. Accessing and Retrieving Data through APIs and Parsing to dataframe
 
