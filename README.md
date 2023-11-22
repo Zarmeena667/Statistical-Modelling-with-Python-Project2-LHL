@@ -12,14 +12,14 @@ The goal of this project was to:
 ## Repository folder guide/order
 1. Readme
 2. notebooks
-     i. city_bikes
-     ii. yelp_foursquare_EDA
-     iii. joining_data
-     iv. model_building
-3. data
-     i. city_bikes_data
-     ii. fsq_data
-     iii. yelp_data
+     I. city_bikes
+     II. yelp_foursquare_EDA
+     III. joining_data
+     IV. model_building
+4. data
+     I. city_bikes_data
+     II. fsq_data
+     III. yelp_data
      iv. finalfinal_df
      v. project_database.db
 
